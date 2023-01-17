@@ -51,7 +51,9 @@
 <video src="https://github.com/PromptAI/homepage/videos/example-service.mov"></video>
 <video src="https://github.com/PromptAI/homepage/videos/promptai-product.mov"></video>
 <h2 name="quick-start" align="center">扫码体验</h2>
+
 ![example-qr](images/example-qr.png)
+
 ![deploy-01](images/deploy-01.png)
 
 
