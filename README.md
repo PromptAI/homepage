@@ -45,11 +45,13 @@
 </table>
 <br/>
 
-<h2 name="quick-start" align="center">示例</h2>
+[comment]: <> (<h2 name="quick-start" align="center">示例</h2>)
 
-<video src="https://github.com/PromptAI/homepage/blob/main/videos/example-car.mov"></video>
-<video src="https://github.com/PromptAI/homepage/blob/main/videos/example-service.mov"></video>
-<video src="https://github.com/PromptAI/homepage/blob/main/videos/promptai-product.mov"></video>
+[comment]: <> (<video src="https://github.com/PromptAI/homepage/blob/main/videos/example-car.mov"></video>)
+
+[comment]: <> (<video src="https://github.com/PromptAI/homepage/blob/main/videos/example-service.mov"></video>)
+
+[comment]: <> (<video src="https://github.com/PromptAI/homepage/blob/main/videos/promptai-product.mov"></video>)
 <h2 name="quick-start" align="center">扫码体验</h2>
 
 <h2 name="quick-start" align="center">
