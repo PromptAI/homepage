@@ -1,0 +1,28 @@
+#!/bin/sh
+zbot=registry.cn-hangzhou.aliyuncs.com/promptai/zbot-aio:latest
+ai=registry.cn-hangzhou.aliyuncs.com/promptai/zbotai:release
+
+# 1、pull docker image
+docker pull $zbot
+docker pull $ai
+
+# 2、remove old container
+docker rm -f zbot
+
+# 3、prepare dirs
+basedir=/usr/local/zbot/
+
+mkdir -p $basedir/.promptai/
+mkdir -p $basedir/logs
+mkdir -p $basedir/mysql
+mkdir -p $basedir/mongo
+mkdir -p $basedir/p8s
+
+# 4、bind port
+hostport=9000
+
+# 5、run container
+# GPU version
+# docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v /usr/local/zbot/.promptai/:/usr/local/zbot/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -p $hostport:80 --gpus all $zbot
+# CPU version
+docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v /usr/local/zbot/.promptai/:/usr/local/zbot/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -p $hostport:80  $zbot

@@ -1,0 +1,10 @@
+### IDEA ###
+.idea/*
+*.iml
+*/target/*
+*/*.iml
+*/node_modules/*
+.gradle/*
+*/build/*
+*/ui.tar
+docker/backend/ui
