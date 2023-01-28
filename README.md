@@ -46,8 +46,8 @@
 <br/>
 
 <h2 name="quick-start" align="center">示例</h2>
-<table>
 
+<table border="0">
 <tr>
  <td width="33%">
 
@@ -64,13 +64,11 @@
 </tr>
 </table>
 <h2 name="quick-start" align="center">
-
+扫码体验
 
 ![example-qr](images/example-qr.png)
 
-<h5 name="scan-qrcode" align="center">
-扫码体验示例
-</h5>
+
 
 </h2>
 
