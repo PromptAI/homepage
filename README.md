@@ -46,12 +46,20 @@
 <br/>
 
 <h2 name="quick-start" align="center">示例</h2>
+<tr>
+ <td width="33%">
 
 [![商品示例](images/example-product.png)](https://www.promptai.cn)
+ </td>
+<td width="33%">
 
 [![公积金示例](images/example-service.png)](https://www.promptai.cn)
+ </td>
+<td width="33%">
 
 [![车载示例](images/example-product.png)](https://www.promptai.cn)
+ </td>
+</tr>
 
 <h2 name="quick-start" align="center">
 
