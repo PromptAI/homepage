@@ -46,6 +46,8 @@
 <br/>
 
 <h2 name="quick-start" align="center">示例</h2>
+<table>
+
 <tr>
  <td width="33%">
 
@@ -60,10 +62,15 @@
 [![车载示例](images/example-product.png)](https://www.promptai.cn)
  </td>
 </tr>
-
+</table>
 <h2 name="quick-start" align="center">
 
+
 ![example-qr](images/example-qr.png)
+
+<h5 name="scan-qrcode" align="center">
+扫码体验示例
+</h5>
 
 </h2>
 
