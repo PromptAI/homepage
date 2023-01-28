@@ -45,18 +45,30 @@
 </table>
 <br/>
 
-[comment]: <> (<h2 name="quick-start" align="center">示例</h2>)
+<h2 name="quick-start" align="center">示例</h2>
 
-[comment]: <> (<video src="https://github.com/PromptAI/homepage/blob/main/videos/example-car.mov"></video>)
+<table border="0">
+<tr>
+ <td width="33%">
 
-[comment]: <> (<video src="https://github.com/PromptAI/homepage/blob/main/videos/example-service.mov"></video>)
+[![商品示例](images/example-product.png)](https://www.promptai.cn)
+ </td>
+<td width="33%">
 
-[comment]: <> (<video src="https://github.com/PromptAI/homepage/blob/main/videos/promptai-product.mov"></video>)
-<h2 name="quick-start" align="center">扫码体验</h2>
+[![公积金示例](images/example-service.png)](https://www.promptai.cn)
+ </td>
+<td width="33%">
 
+[![车载示例](images/example-product.png)](https://www.promptai.cn)
+ </td>
+</tr>
+</table>
 <h2 name="quick-start" align="center">
+扫码体验
 
 ![example-qr](images/example-qr.png)
+
+
 
 </h2>
 
@@ -65,12 +77,12 @@
 
 <h2 name="quick-start" align="center">快速开始</h2>
 
-云版本PromptAI可访问[app.promptai.cn](https://app.promptai.cn) 在注册账号后即可体验。
+云版本PromptAI可访问[https://app.promptai.cn](https://app.promptai.cn) 在注册账号后即可体验。
 
 
 <h2 name="documentation" align="center">帮助文档</h2>
 
-获取PromptAI[官方文档](https://doc.promptai.cn/) 可访问  [doc.promptai.cn](https://https://doc.promptai.cn). 
+获取PromptAI[官方文档](https://doc.promptai.cn/) 可访问  [https://doc.promptai.cn](https://https://doc.promptai.cn). 
 
 <h2 name="development" align="center">本地版安装</h2>
 
