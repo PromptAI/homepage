@@ -59,7 +59,7 @@
  </td>
 <td width="33%">
 
-[![车载示例](images/example-product.png)](https://www.promptai.cn)
+[![车载示例](images/example-car.png)](https://www.promptai.cn)
  </td>
 </tr>
 </table>
