@@ -46,7 +46,8 @@
 <br/>
 
 <h2 name="quick-start" align="center">示例</h2>
-[![商品示例](images/example-product.png)](https://www.promptai.cn/examples/promptai-product.mov)
+[![](images/example-product.png)\](https://www.promptai.cn/examples/promptai-product.mov)
+[![商品示例](images/example-product.png)]()
 
 [![公积金示例](images/example-service.png)](https://www.promptai.cn/examples/example-service.mov)
 
