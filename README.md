@@ -46,10 +46,9 @@
 <br/>
 
 <h2 name="quick-start" align="center">示例</h2>
-[![Watch the video](https://i0.hdslb.com/bfs/archive/c5d466c2c5f18459cd4390d60abefac7ede6a534.jpg)](https://www.bilibili.com/video/BV1hY4y1R7VF?t=2.5)
-![video](https://github.com/PromptAI/homepage/blob/main/videos/example-car.mov)
-![video](https://github.com/PromptAI/homepage/blob/main/videos/example-service.mov)
-![video](https://github.com/PromptAI/homepage/blob/main/videos/promptai-product.mov)
+[![商品示例](images/example-product.png)](https://www.promptai.cn/examples/promptai-product.mov)
+[![公积金示例](images/example-service.png)](https://www.promptai.cn/examples/example-service.mov)
+[![车载示例](images/example-product.png)](https://www.promptai.cn/examples/example-car.mov)
 
 <h2 name="quick-start" align="center">
 
