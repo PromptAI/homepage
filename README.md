@@ -106,6 +106,7 @@
 1. 支持Linux/MacOS (如果你有Windows安装需求，可以在官网/微信群给我们留言)； 
 2. 更新时重新执行该脚本即可，数据已挂载到本地目录；
 3. 后期可能更新该脚本，敬请注意关注。
+4. [shell 脚本](/scripts/install_zh.sh)
 
 ```shell
 #!/bin/sh
