@@ -106,20 +106,19 @@ The installation process can be unattended. The pull image time here is related 
 1. Support Linux/MacOS (if you have Windows installation requirements, you can leave us a message on the official website/WeChat group); 
 2. Re-execute the script when updating, and the data has been mounted to the local directory;
 3. The script may be updated later. Please pay attention。
+4. The [shell script](/scripts/install_en.sh)
 
 ```shell
 #!/bin/sh
-zbot=registry.cn-hangzhou.aliyuncs.com/promptai/zbot-aio:latest
-ai=registry.cn-hangzhou.aliyuncs.com/promptai/zbotai:release 
+zbot=promptai/zbot-aio:latest
+ai=promptai/zbotai:release 
 
 # 1、pull docker image
 docker pull $zbot
 docker pull $ai
 
-# 2、remove old container
 docker rm -f zbot
-
-# 3、prepare dirs
+# 2、prepare dirs
 basedir=/usr/local/zbot/
 
 mkdir -p $basedir/.promptai/
@@ -128,10 +127,9 @@ mkdir -p $basedir/mysql
 mkdir -p $basedir/mongo
 mkdir -p $basedir/p8s
 
-# 4、bind port
+# 3、bind port
 hostport=9000
 
-# 5、run container
 # GPU version 
 # docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v /usr/local/zbot/.promptai/:/usr/local/zbot/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -p $hostport:80 --gpus all $zbot
 # CPU version
