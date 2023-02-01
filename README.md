@@ -49,6 +49,7 @@
 
 <h2 name="quick-start" align="center">示例</h2>
 
+### 视频
 <table border="0">
 <tr>
  <td width="33%">
@@ -71,11 +72,11 @@
 ![example-qr](images/example-qr.png)
 
 
-
 </h2>
 
+### 案例
 
-
+[车载助手](/examples/car/car.md) 行车中常见的问答
 
 <h2 name="quick-start" align="center">快速开始</h2>
 

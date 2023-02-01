@@ -49,6 +49,7 @@ Whether you want to collect information or prepare to call, our non-code flow ed
 
 <h2 name="quick-start" align="center">Examples</h2>
 
+### Video
 <table border="0">
 <tr>
  <td width="33%">
@@ -70,7 +71,8 @@ Code scanning experience
 
 ![example-qr](images/example-qr.png)
 
-
+### Cases
+[Car](/examples/car/car_en.md) FAQs in driving
 
 </h2>
 
