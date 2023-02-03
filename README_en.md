@@ -5,10 +5,10 @@
 <center>
 <table>
   <tr>
-    <th><h2>🆒</h2><h3>No code programming</h3></th>
-    <th><h2>🎓</h2><h3>Whole project management</h3></th>
-    <th><h2>💻</h2><h3>Open predefined</h3></th>
-    <th><h2>🚀</h2><h3>Fast debugging of modules</h3></th>
+    <th><h3>No code programming</h3></th>
+    <th><h3>Whole project management</h3></th>
+    <th><h3>Open predefined</h3></th>
+    <th><h3>Fast debugging of modules</h3></th>
   </tr>
     <tr>
     <td width="25%">Whether you understand <strong><a href="https://github.com/rasaHQ/rasa" target="_blank">Rasa</a></strong> or not, you can start quickly. Provide RASA code download for further learning and mastering RASA</td>

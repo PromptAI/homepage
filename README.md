@@ -9,10 +9,10 @@
 <center>
 <table>
   <tr>
-    <th><h2>🆒</h2><h3>无代码编程</h3></th>
-    <th><h2>🎓</h2><h3>全项目管理</h3></th>
-    <th><h2>💻</h2><h3>开放预定义</h3></th>
-    <th><h2>🚀</h2><h3>分模块快速调试</h3></th>
+    <th><h3>无代码编程</h3></th>
+    <th><h3>全项目管理</h3></th>
+    <th><h3>开放预定义</h3></th>
+    <th><h3>分模块快速调试</h3></th>
   </tr>
     <tr>
     <td width="25%">不管您是否理解<strong><a href="https://github.com/rasaHQ/rasa" target="_blank">Rasa</a></strong>， 都可快速上手。提供RASA 代码下载，方便进一步学习和掌握RASA</td>
