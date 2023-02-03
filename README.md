@@ -1,6 +1,6 @@
 [中文](README.md) | [English](README_en.md)
 
-<h2 align="center">什么是PromptAI？</h2>
+<h2 align="center">PromptAI： 基于RASA的脑图无代码编程工具</h2>
 
 鉴于RASA工程化经验， 我们去繁化简，贡献社区，全球独家发布基于RASA的脑图无代码编程工具， 无论您是否熟悉RASA, 都可极简实现对话系统， 在几分钟内完成一个对话设计， 并上线。 您也可免费下载生成的RASA文件， 私有部署。
 <br/>
