@@ -50,15 +50,15 @@ Whether you want to collect information or prepare to call, our non-code flow ed
 <tr>
  <td width="33%">
 
-[![Product example](images/example-product.png)](https://www.promptai.cn)
+[![Product example](images/example-product.png)](https://www.promptai.cn/en/#examples)
  </td>
 <td width="33%">
 
-[![Example of provident fund](images/example-service.png)](https://www.promptai.cn)
+[![Example of provident fund](images/example-service.png)](https://www.promptai.cn/en/#examples)
  </td>
 <td width="33%">
 
-[![On-board example](images/example-car.png)](https://www.promptai.cn)
+[![On-board example](images/example-car.png)](https://www.promptai.cn/en/#examples)
  </td>
 </tr>
 </table>

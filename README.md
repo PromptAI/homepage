@@ -54,15 +54,15 @@
 <tr>
  <td width="33%">
 
-[![商品示例](images/example-product.png)](https://www.promptai.cn)
+[![商品示例](images/example-product.png)](https://www.promptai.cn/zh/#examples)
  </td>
 <td width="33%">
 
-[![公积金示例](images/example-service.png)](https://www.promptai.cn)
+[![公积金示例](images/example-service.png)](https://www.promptai.cn/zh/#examples)
  </td>
 <td width="33%">
 
-[![车载示例](images/example-car.png)](https://www.promptai.cn)
+[![车载示例](images/example-car.png)](https://www.promptai.cn/zh/#examples)
  </td>
 </tr>
 </table>
