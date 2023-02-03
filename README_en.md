@@ -1,18 +1,14 @@
 [中文](README.md) | [English](README_en.md)
 
-<h2 align="center">What is PromptAI ？</h2>
-
-In view of the engineering experience of RASA, we will simplify and contribute to the community. We will release the brain map codeless programming tool based on RASA exclusively in the world. Whether you are familiar with RASA or not, you can realize the dialogue system in a very simple way, complete a dialogue design in a few minutes, and go online. You can also download the generated RASA file for private deployment for free.
-<br/>
 <h2 name="highlights" align="center">Highlights</h2>
 
 <center>
 <table>
   <tr>
-    <th><h2>🆒</h2><h3>No code programming</h3></th>
-    <th><h2>🎓</h2><h3>Whole project management</h3></th>
-    <th><h2>💻</h2><h3>Open predefined</h3></th>
-    <th><h2>🚀</h2><h3>Fast debugging of modules</h3></th>
+    <th><h3>No code programming</h3></th>
+    <th><h3>Whole project management</h3></th>
+    <th><h3>Open predefined</h3></th>
+    <th><h3>Fast debugging of modules</h3></th>
   </tr>
     <tr>
     <td width="25%">Whether you understand <strong><a href="https://github.com/rasaHQ/rasa" target="_blank">Rasa</a></strong> or not, you can start quickly. Provide RASA code download for further learning and mastering RASA</td>
@@ -54,28 +50,21 @@ Whether you want to collect information or prepare to call, our non-code flow ed
 <tr>
  <td width="33%">
 
-[![Product example](images/example-product.png)](https://www.promptai.cn)
+[![Product example](images/example-product.png)](https://www.promptai.cn/en/#examples)
  </td>
 <td width="33%">
 
-[![Example of provident fund](images/example-service.png)](https://www.promptai.cn)
+[![Example of provident fund](images/example-service.png)](https://www.promptai.cn/en/#examples)
  </td>
 <td width="33%">
 
-[![On-board example](images/example-car.png)](https://www.promptai.cn)
+[![On-board example](images/example-car.png)](https://www.promptai.cn/en/#examples)
  </td>
 </tr>
 </table>
-<h2 name="quick-start" align="center">
-Code scanning experience
-
-![example-qr](images/example-qr.png)
 
 ### Cases
 [Car](/examples/car/car_en.md) FAQs in driving
-
-</h2>
-
 
 
 
@@ -152,7 +141,7 @@ See ` System is ready` Indicates that the system is started successfully
 Open browser access` http://ip:port `You can see the effect *Assuming that the installation script is used and the port is not changed, you can access` http://localhost:9000 `Log in*
 
 The user can start the experience by displaying the account and password after installation, as shown in the figure:
-![deploy-02](images/deploy-02.png)
+![deploy-02](images/deploy-02-en.png)
 
 <br/>*Note: Default initial login account/password: admin@promptai.local /Promptai, but please follow the display after the service installation*
 

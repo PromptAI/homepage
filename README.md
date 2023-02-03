@@ -9,10 +9,10 @@
 <center>
 <table>
   <tr>
-    <th><h2>🆒</h2><h3>无代码编程</h3></th>
-    <th><h2>🎓</h2><h3>全项目管理</h3></th>
-    <th><h2>💻</h2><h3>开放预定义</h3></th>
-    <th><h2>🚀</h2><h3>分模块快速调试</h3></th>
+    <th><h3>无代码编程</h3></th>
+    <th><h3>全项目管理</h3></th>
+    <th><h3>开放预定义</h3></th>
+    <th><h3>分模块快速调试</h3></th>
   </tr>
     <tr>
     <td width="25%">不管您是否理解<strong><a href="https://github.com/rasaHQ/rasa" target="_blank">Rasa</a></strong>， 都可快速上手。提供RASA 代码下载，方便进一步学习和掌握RASA</td>
@@ -54,25 +54,18 @@
 <tr>
  <td width="33%">
 
-[![商品示例](images/example-product.png)](https://www.promptai.cn)
+[![商品示例](images/example-product.png)](https://www.promptai.cn/zh/#examples)
  </td>
 <td width="33%">
 
-[![公积金示例](images/example-service.png)](https://www.promptai.cn)
+[![公积金示例](images/example-service.png)](https://www.promptai.cn/zh/#examples)
  </td>
 <td width="33%">
 
-[![车载示例](images/example-car.png)](https://www.promptai.cn)
+[![车载示例](images/example-car.png)](https://www.promptai.cn/zh/#examples)
  </td>
 </tr>
 </table>
-<h2 name="quick-start" align="center">
-扫码体验
-
-![example-qr](images/example-qr.png)
-
-
-</h2>
 
 ### 案例
 
