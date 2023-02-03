@@ -66,13 +66,6 @@
  </td>
 </tr>
 </table>
-<h2 name="quick-start" align="center">
-扫码体验
-
-![example-qr](images/example-qr.png)
-
-
-</h2>
 
 ### 案例
 
