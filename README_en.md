@@ -49,6 +49,7 @@ Whether you want to collect information or prepare to call, our non-code flow ed
 
 <h2 name="quick-start" align="center">Examples</h2>
 
+### Video
 <table border="0">
 <tr>
  <td width="33%">
@@ -70,7 +71,8 @@ Code scanning experience
 
 ![example-qr](images/example-qr.png)
 
-
+### Cases
+[Car](/examples/car/car_en.md) FAQs in driving
 
 </h2>
 
@@ -111,7 +113,7 @@ The installation process can be unattended. The pull image time here is related 
 ```shell
 #!/bin/sh
 zbot=promptai/zbot-aio:latest
-ai=promptai/zbotai:release 
+ai=promptai/zbotai:release
 
 # 1、pull docker image
 docker pull $zbot
@@ -130,10 +132,10 @@ mkdir -p $basedir/p8s
 # 3、bind port
 hostport=9000
 
-# GPU version 
-# docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v /usr/local/zbot/.promptai/:/usr/local/zbot/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -p $hostport:80 --gpus all $zbot
+# GPU version
+# docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -e ai.base.dir=$basedir/.promptai/ -p $hostport:80 --gpus all $zbot
 # CPU version
-docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v /usr/local/zbot/.promptai/:/usr/local/zbot/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -p $hostport:80  $zbot
+docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
 ```
 
 #### Completed

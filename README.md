@@ -49,6 +49,7 @@
 
 <h2 name="quick-start" align="center">示例</h2>
 
+### 视频
 <table border="0">
 <tr>
  <td width="33%">
@@ -71,11 +72,11 @@
 ![example-qr](images/example-qr.png)
 
 
-
 </h2>
 
+### 案例
 
-
+[车载助手](/examples/car/car.md) 行车中常见的问答
 
 <h2 name="quick-start" align="center">快速开始</h2>
 
@@ -111,7 +112,7 @@
 ```shell
 #!/bin/sh
 zbot=registry.cn-hangzhou.aliyuncs.com/promptai/zbot-aio:latest
-ai=registry.cn-hangzhou.aliyuncs.com/promptai/zbotai:release 
+ai=registry.cn-hangzhou.aliyuncs.com/promptai/zbotai:release
 
 # 1、pull docker image
 docker pull $zbot
@@ -133,10 +134,10 @@ mkdir -p $basedir/p8s
 hostport=9000
 
 # 5、run container
-# GPU version 
-# docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v /usr/local/zbot/.promptai/:/usr/local/zbot/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -p $hostport:80 --gpus all $zbot
+# GPU version
+# docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -e ai.base.dir=$basedir/.promptai/ -p $hostport:80 --gpus all $zbot
 # CPU version
-docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v /usr/local/zbot/.promptai/:/usr/local/zbot/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -p $hostport:80  $zbot
+docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
 ```
 
 #### 安装完成
