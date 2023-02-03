@@ -36,16 +36,16 @@ As a small fruit store, we have online orders every day. We usually need to ask 
 >    ![fruits_11.jpg](images/fruits_11.jpg)
 
 > 8. Click "Debug Run - Current Module" in the upper right corner, wait for a period of time, and then try to talk, as shown in the figure:
->    ![fruits_12.jpg](images/fruits_5.jpg)
+>    ![fruits_12.jpg](images/fruits_12.jpg)
 
 > 9. Click the "Publish Run" menu on the right to enter the publish deployment page, as shown in the figure:
->    ![fruits_13.jpg](images/fruits_6.jpg)
+>    ![fruits_13.jpg](images/fruits_13.jpg)
 
 > 10. Click "Publish" in the upper right corner and wait for a period of time before you can talk, deploy scripts and preview online.
->     ![fruits_14.jpg](images/fruits_7.jpg)
+>     ![fruits_14.jpg](images/fruits_14.jpg)
 
 > 11. Scan QR code and preview online
->     ![fruits_15.jpeg](images/fruits_8.jpeg)
+>     ![fruits_15.jpeg](images/fruits_15.jpg)
 
 ### Successfully completed the construction
 

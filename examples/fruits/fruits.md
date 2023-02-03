@@ -23,7 +23,7 @@
 
 > 6. 点击“信息列表”节点后，如图所示：
 >    ![fruits_6.jpg](images/fruits_6.jpg)
->    我们开始创建第一个信息收集项：**什么水果**
+>    我们开始创建第一个信息收集项：**什么水果** .
 >    ![fruits_7.jpg](images/fruits_7.jpg)
 >    创建一个**变量**“水果种类”来存储“什么水果”
 >    ![fruits_8.jpg](images/fruits_8.jpg)
@@ -36,16 +36,16 @@
 >    ![fruits_11.jpg](images/fruits_11.jpg)
 
 > 8. 点击右上角“调试运行-当前模块”，等待一段时间后，即可尝试对话，如图所示：
->    ![fruits_12.jpg](images/fruits_5.jpg)
+>    ![fruits_12.jpg](images/fruits_12.jpg)
 
 > 9. 点击右边住菜单“发布运行”，进入发布部署页面，如图所示：
->    ![fruits_13.jpg](images/fruits_6.jpg)
+>    ![fruits_13.jpg](images/fruits_13.jpg)
 
 > 10. 点击右上角“发布”，等待一段时间后，即可对话、部署脚本、在线预览。
->     ![fruits_14.jpg](images/fruits_7.jpg)
+>     ![fruits_14.jpg](images/fruits_14.jpg)
 
 > 11. 扫描二维码，在线预览
->     ![fruits_15.jpeg](images/fruits_8.jpeg)
+>     ![fruits_15.jpg](images/fruits_15.jpg)
 
 ### 成功完成搭建
 
