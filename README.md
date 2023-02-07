@@ -78,7 +78,7 @@
 
 <h2 name="documentation" align="center">帮助文档</h2>
 
-获取PromptAI[官方文档](https://doc.promptai.cn/) 可访问  [https://doc.promptai.cn](https://https://doc.promptai.cn). 
+获取PromptAI[官方文档](https://doc.promptai.cn/) 可访问  [https://doc.promptai.cn](https://doc.promptai.cn). 
 
 <h2 name="development" align="center">本地版安装</h2>
 
