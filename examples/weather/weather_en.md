@@ -39,4 +39,4 @@ Before we travel every day, we want to know the weather today? At this time, we 
 
 ### Successfully completed the construction
 
-So far, we have successfully completed a small fruit order assistant robot, share it quickly!
+So far, we have successfully completed a weather query assistant robot, share it quickly!
