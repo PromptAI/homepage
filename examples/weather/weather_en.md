@@ -36,6 +36,7 @@ Before we travel every day, we want to know the weather today? At this time, we 
 
 > 9. Scan QR code and preview online
 >     ![weather_12.png](images/weather_12.png)
+> 
 ### Successfully completed the construction
 
 So far, we have successfully completed a small fruit order assistant robot, share it quickly!
