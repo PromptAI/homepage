@@ -7,4 +7,5 @@
 .gradle/*
 */build/*
 */ui.tar
+.github/*
 docker/backend/ui
