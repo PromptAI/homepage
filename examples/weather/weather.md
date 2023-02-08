@@ -7,34 +7,34 @@
 ### 以下是搭建过程
 
 > 1. 点击“新增流图”，创建名为“天气查询”的流图，如图所示：
->    ![weather_1.jpg](images/weather_1.jpg)
+>    ![weather_1.png](images/weather_1.png)
 
 > 2. 选中“天气查询”节点，出现如图所示菜单，如图所示：
->    ![weather_2.jpg](images/weather_2.jpg)
+>    ![weather_2.png](images/weather_2.png)
 
 > 3. 点击菜单“用户输入”后，进入编辑节点，如图所示：
->    ![weather_3.jpg](images/weather_3.jpg)
+>    ![weather_3.png](images/weather_3.png)
 >    创建一个**变量**“city”来存储要查询天气的城市
-     ![weather_4.jpg](images/weather_4.jpg)
+     ![weather_4.png](images/weather_4.png)
 >    标记训练例句中的城市
-     ![weather_5.jpg](images/weather_4.jpg)
+     ![weather_5.png](images/weather_4.png)
 > 4. 点击“项目视图”->"Webhooks"，新增`Webhook`，如图所示：
->    ![weather_6.jpg](images/weather_4.jpg)
->    ![weather_7.jpg](images/weather_4.jpg)
+>    ![weather_6.png](images/weather_4.png)
+>    ![weather_7.png](images/weather_4.png)
 > 5. 点击“项目视图”->"变量列表"，给变量`city`添加城市相关热词，如图所示：
->    ![weather_8.jpg](images/weather_4.jpg)
+>    ![weather_8.png](images/weather_4.png)
 
 > 6. 点击右上角“调试运行-当前模块”，等待一段时间后，即可尝试对话，如图所示：
->    ![weather_9.jpg](images/weather_12.jpg)
+>    ![weather_9.png](images/weather_12.png)
 
 > 7. 点击右边住菜单“发布运行”，进入发布部署页面，如图所示：
->    ![weather_10.jpg](images/weather_13.jpg)
+>    ![weather_10.png](images/weather_13.png)
 
 > 8. 点击右上角“发布”，等待一段时间后，即可对话、部署脚本、在线预览。
->     ![weather_11.jpg](images/weather_14.jpg)
+>     ![weather_11.png](images/weather_14.png)
 
 > 9. 扫描二维码，在线预览
->     ![weather_12.jpg](images/weather_15.jpg)
+>     ![weather_12.png](images/weather_15.png)
 
 ### 成功完成搭建
 
