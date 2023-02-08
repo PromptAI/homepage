@@ -31,10 +31,10 @@
 >    ![weather_10.png](images/weather_10.png)
 
 > 8. 点击右上角“发布”，等待一段时间后，即可对话、部署脚本、在线预览。
->     ![weather_11.png](images/weather_11.png)
+>    ![weather_11.png](images/weather_11.png)
 
 > 9. 扫描二维码，在线预览
->     ![weather_12.png](images/weather_12.png)
+>    ![weather_12.png](images/weather_12.png)
 
 ### 成功完成搭建
 

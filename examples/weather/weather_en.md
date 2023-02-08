@@ -30,10 +30,10 @@ Before we travel every day, we want to know the weather today? At this time, we 
 >    ![weather_10.png](images/weather_10.png)
 
 > 8. Click "Publish" in the upper right corner and wait for a period of time before you can talk, deploy scripts and preview online.
->     ![weather_11.png](images/weather_11.png)
+>    ![weather_11.png](images/weather_11.png)
 
 > 9. Scan QR code and preview online
->     ![weather_12.jpeg](images/weather_12.png)
+>    ![weather_12.jpeg](images/weather_12.png)
 
 ### Successfully completed the construction
 
