@@ -64,9 +64,12 @@ Whether you want to collect information or prepare to call, our non-code flow ed
 </table>
 
 ### Cases
+
 [Car](/examples/car/car_en.md) FAQs in driving
 
+[Fruits](/examples/fruits/fruits.md) collect fruits order information
 
+[Weather](/examples/weather/weather.md) query city weather
 
 <h2 name="quick-start" align="center">Quick Start</h2>
 
@@ -75,7 +78,7 @@ Cloud version PromptAI is accessible[https://app.promptai.cn](https://app.prompt
 
 <h2 name="documentation" align="center">Documents</h2>
 
-Get PromptAI Document [Document](https://doc.promptai.cn/) from [https://doc.promptai.cn](https://https://doc.promptai.cn). 
+Get PromptAI Document [Document](https://doc.promptai.cn/) from [https://doc.promptai.cn](https://doc.promptai.cn). 
 
 <h2 name="development" align="center">Local installation</h2>
 
