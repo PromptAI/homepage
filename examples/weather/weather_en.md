@@ -35,7 +35,7 @@ Before we travel every day, we want to know the weather today? At this time, we 
 >    ![weather_11.png](images/weather_11.png)
 
 > 9. Scan QR code and preview online
->     ![weather_12.png](images/weather_12.png)
+>     <br>![weather_12.png](images/weather_12.png)
 
 ### Successfully completed the construction
 
