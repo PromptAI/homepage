@@ -18,9 +18,11 @@
      ![weather_4.png](images/weather_4.png)
 >    标记训练例句中的城市
      ![weather_5.png](images/weather_5.png)
+
 > 4. 点击“项目视图”->"Webhooks"，新增`Webhook`，如图所示：
 >    ![weather_6.png](images/weather_6.png)
 >    ![weather_7.png](images/weather_7.png)
+
 > 5. 点击“项目视图”->"变量列表"，给变量`city`添加城市相关热词，如图所示：
 >    ![weather_8.png](images/weather_8.png)
 
@@ -34,7 +36,7 @@
 >    ![weather_11.png](images/weather_11.png)
 
 > 9. 扫描二维码，在线预览
->    ![weather_12.png](images/weather_12.png)
+>     ![weather_12.png](images/weather_11.png)
 
 ### 成功完成搭建
 

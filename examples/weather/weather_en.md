@@ -16,10 +16,12 @@ Before we travel every day, we want to know the weather today? At this time, we 
 >    Create a * * variable * * "city" to store the city to query the weather
      ![weather_4.png](images/weather_4.png)
 >    Mark the city in the training example sentence
-     ![weather_5.png](images/weather_5.png)
-> 4.Click "Project View" ->"Webhooks" to add "Webhooks", as shown in the figure:
+>    ![weather_5.png](images/weather_5.png)
+
+> 4. Click "Project View" ->"Webhooks" to add "Webhooks", as shown in the figure:
 >    ![weather_6.png](images/weather_6.png)
 >    ![weather_7.png](images/weather_7.png)
+
 > 5. Click "Project View" ->"Variable List" to add city-related hot words to the variable "city", as shown in the figure:
 >    ![weather_8.png](images/weather_8.png)
 
@@ -33,7 +35,7 @@ Before we travel every day, we want to know the weather today? At this time, we 
 >    ![weather_11.png](images/weather_11.png)
 
 > 9. Scan QR code and preview online
->    ![weather_12.jpeg](images/weather_12.png)
+>     ![weather_12.jpeg](images/weather_12.png)
 
 ### Successfully completed the construction
 
