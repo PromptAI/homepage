@@ -71,6 +71,10 @@
 
 [车载助手](/examples/car/car.md) 行车中常见的问答
 
+[水果订单助手](/examples/fruits/fruits.md) 收集水果下单信息
+
+[天气查询助手](/examples/weather/weather.md) 查询城市天气
+
 <h2 name="quick-start" align="center">快速开始</h2>
 
 云版本PromptAI可访问[https://app.promptai.cn](https://app.promptai.cn) 在注册账号后即可体验。
@@ -78,7 +82,7 @@
 
 <h2 name="documentation" align="center">帮助文档</h2>
 
-获取PromptAI[官方文档](https://doc.promptai.cn/) 可访问  [https://doc.promptai.cn](https://https://doc.promptai.cn). 
+获取PromptAI[官方文档](https://doc.promptai.cn/) 可访问  [https://doc.promptai.cn](https://doc.promptai.cn). 
 
 <h2 name="development" align="center">本地版安装</h2>
 
