@@ -11,10 +11,10 @@
     <th><h3>Fast debugging of modules</h3></th>
   </tr>
     <tr>
-    <td width="25%">Whether you understand <strong><a href="https://github.com/rasaHQ/rasa" target="_blank">Rasa</a></strong> or not, you can start quickly. Provide RASA code download for further learning and mastering RASA</td>
-    <td width="25%">The entity, intention, slot (variable) and dialog flow diagram are fully displayed in the same integrated development environment (IDE). Different dialogue modules can be combined at will and released with one button. It is the first time to combine software development process with dialog system design/debugging.</td>
-    <td width="25%">Provide various predefined entities, intentions, and share all that can be shared to facilitate rapid development. We also welcome you to provide shared modules and contact us.</td>
-    <td width="25%">Each parting module can be compiled separately or jointly to facilitate testing and rapid debugging</td>
+    <td width="25%">You can design a dialogue system directly without knowing programming.  It provides generated <strong><a href="https://github.com/rasaHQ/rasa" target="_blank">Rasa</a></strong> codes for further learning and customization.</td>
+    <td width="25%">Entities, intents, slots (variables) and dialog flows are fully displayed in the same integrated development environment (IDE). Different dialogue modules can be combined at will and released with one click.  It is the first of its kind system that embeded software development process in dialogue system design/debugging.</td>
+    <td width="25%">Provide various predefined entities and intents to facilitate rapid development. You are welcome to provide shared modules.</td>
+    <td width="25%">Each dialogue flow can be compiled separately or jointly to facilitate testing and rapid debugging.</td>
   </tr>
 
 </table>
