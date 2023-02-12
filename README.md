@@ -1,6 +1,6 @@
 [中文](README.md) | [English](README_en.md)
 
-<h2 align="center">PromptAI： 基于脑图的对话机器人设计工具</h2>
+<h2 align="center">PromptDialog： 基于脑图的对话机器人设计工具</h2>
 
 鉴于对话机器人设计和部署的经验， 我们去繁化简，开发了基于脑图的无代码对话机器人设计工具， 无论您是否熟悉RASA, 都可极简实现对话系统， 在几分钟内完成一个对话设计， 并上线。 您也可免费下载生成的RASA文件， 私有部署。
 <br/>
