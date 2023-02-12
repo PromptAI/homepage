@@ -2,7 +2,7 @@
 
 <h2 align="center">PromptDialog： No-code User Interface for Dialogue Design and Conversational AI  </h2>
 
-PromptDialog is a no-code user interface built for fast dialogue design and deployment.  It is built on <a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a>, but not require the knowledge of RASA to design and deploy chatbots. It minimizes annotation and coding efforts,  aiming for releasing a chatbot in a few minutes.  PromptDialog facilitates fast debugging, allowing your team to quickly identify errors and improve your design.  The source code of develoeped chatbots can be downloaded for local/cloud deployment and customization. 
+PromptDialog is a no-code user interface built for fast dialogue design and deployment.  It is based on <a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a>, but doesnot require specific knowledge of RASA to design and deploy chatbots. PromptDialog uses natural lanuage to design natual language dialogues.  It minimizes annotation and coding efforts,  aiming for a chatbot release in a few minutes.  PromptDialog facilitates fast debugging, allowing your team to quickly identify errors and improve your design.  The source code of develoeped chatbots can be downloaded for local/cloud deployment and further customization. 
 
 <br/>
 
