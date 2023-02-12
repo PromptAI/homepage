@@ -11,7 +11,7 @@
     <th><h3>Fast debugging of modules</h3></th>
   </tr>
     <tr>
-    <td width="25%">You can design a dialogue system directly without knowing programming.  It provides generated <strong><a href="https://github.com/rasaHQ/rasa" target="_blank">Rasa</a></strong> codes for further learning and customization.</td>
+    <td width="25%">You can design a dialogue system directly without knowing programming.  It provides generated <strong><a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a></strong> codes for further learning and customization.</td>
     <td width="25%">Entities, intents, slots (variables) and dialog flows are fully displayed in the same integrated development environment (IDE). Different dialogue modules can be combined at will and released with one click.  It is the first of its kind system that embeded software development process in dialogue system design/debugging.</td>
     <td width="25%">Provide various predefined entities and intents to facilitate rapid development. You are welcome to provide shared modules.</td>
     <td width="25%">Each dialogue flow can be compiled separately or jointly to facilitate testing and rapid debugging.</td>
@@ -25,20 +25,19 @@
 <table>
 
 <tr>
-    <td width="33%"><h4>Visual dialog editor</h4></td>
-    <td width="67%">Design and implement your conversation now</Br>Create a natural dialogue flow in our interface based on intuitive dialogue. Add natural language examples dynamically, and create rich responses using buttons, images, and merry-go-rounds. Let engineers focus on systems and integration.</td>
+    <td width="33%"><h4>Visual Dialogue Editor</h4></td>
+    <td width="67%"> Create a dialogue flow using an intuitive natural language interface. Add intent and entity examples, and create rich responses using buttons, images, and merry-go-rounds.  Deploy dialog bots in one click after the design is done. </td>
 </tr>
 <tr>
-    <td width="33%"><h4>Session Form</h4></td>
-    <td width="67%">Create complex session forms</Br>
-Whether you want to collect information or prepare to call, our non-code flow editor allows you to implement complex business logic using fine-grained conditions and user input validation.</td>
+    <td width="33%"><h4>Complex Business Flows</h4></td>
+    <td width="67%"> Our no-code flow editor allows you to implement complex information collection and/or business logics using fine-grained conditions and input validation.</td>
 <tr>
-    <td width="33%"><h4>Customized</h4></td>
-    <td width="67%">Compile and debug easily</br>We provide different debugging schemes to meet different business needs.</td>
+    <td width="33%"><h4>Customization</h4></td>
+    <td width="67%">Train and debug models easily.</br>We provide different debugging schemes to meet different business needs.</td>
 </tr>
 <tr>
-    <td width="33%"><h4>Non-intrusive deployment</h4></td>
-    <td width="67%">One-click easy release </Br> We provide Web/Mobile mode for publishing, without modifying any business code, and automatically generate reference code after successful publishing. Just copy a few lines of code to your application to have conversation ability.
+    <td width="33%"><h4>Non-Intrusive Deployment</h4></td>
+    <td width="67%">It provides Web/Mobile modes for publishing and automatically generates RASA code after publishing. Just copy a few lines of code to have the conversation capability in your applications.
 </tr>
 </table>
 <br/>
