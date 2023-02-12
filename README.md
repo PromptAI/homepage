@@ -47,6 +47,14 @@
 </table>
 <br/>
 
+### 案例
+
+[车载助手](/examples/car/car.md) 行车中常见的问答
+
+[水果订单助手](/examples/fruits/fruits.md) 收集水果下单信息
+
+[天气查询助手](/examples/weather/weather.md) 查询城市天气
+
 <h2 name="quick-start" align="center">示例</h2>
 
 ### 视频
@@ -66,14 +74,6 @@
  </td>
 </tr>
 </table>
-
-### 案例
-
-[车载助手](/examples/car/car.md) 行车中常见的问答
-
-[水果订单助手](/examples/fruits/fruits.md) 收集水果下单信息
-
-[天气查询助手](/examples/weather/weather.md) 查询城市天气
 
 <h2 name="quick-start" align="center">快速开始</h2>
 
