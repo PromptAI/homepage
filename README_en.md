@@ -2,7 +2,7 @@
 
 <h2 align="center">PromptDialog： No-code User Interface for Dialogue Design and Conversational AI  </h2>
 
-PromptDialog is a no-code user interface built for fast dialogue design and deployment.  It is based on <a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a>, but does not require specific knowledge of RASA to design and deploy chatbots. PromptDialog uses natural language to design natural language dialogues.  It minimizes annotation and coding efforts,  aiming for a chatbot release in a few minutes.  PromptDialog facilitates intelligent debugging, allowing your team to quickly identify errors and improve your design.  The source code of developed chatbots can be downloaded for local/cloud deployment and further customization. 
+PromptDialog is a no-code user interface built for fast dialogue design and deployment.  It is based on <a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a>, but does not require specific knowledge of RASA to design and deploy chatbots. PromptDialog uses natural language to design natural language dialogues.  It minimizes annotation and coding efforts,  aiming for a chatbot release in a few minutes.  PromptDialog facilitates fast debugging, allowing your team to quickly identify errors and improve your design.  The source code of developed chatbots can be downloaded for local/cloud deployment and further customization. 
 
 <br/>
 
@@ -12,12 +12,12 @@ PromptDialog is a no-code user interface built for fast dialogue design and depl
 <table>
   <tr>
     <th><h3>No code programming</h3></th>
-    <th><h3>Whole project management</h3></th>
-    <th><h3>Open predefined</h3></th>
-    <th><h3>Fast debugging of modules</h3></th>
+    <th><h3>All-In-One project management</h3></th>
+    <th><h3>Predefined entities and intents</h3></th>
+    <th><h3>Fast debugging of dialogue flows</h3></th>
   </tr>
     <tr>
-    <td width="25%">You can design a dialogue system directly without knowing programming.  It provides generated <strong><a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a></strong> codes for further learning and customization.</td>
+    <td width="25%">You can design a dialogue system directly without knowing programming.  It provides automatically generated <strong><a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a></strong> codes for further learning and customization.</td>
     <td width="25%">Entities, intents, slots (variables) and dialog flows are fully displayed in the same integrated development environment (IDE). Different dialogue modules can be combined at will and released with one click.  It is the first of its kind system that embeded software development process in dialogue system design/debugging.</td>
     <td width="25%">Provide various predefined entities and intents to facilitate rapid development. You are welcome to provide shared modules.</td>
     <td width="25%">Each dialogue flow can be compiled separately or jointly to facilitate testing and rapid debugging.</td>
