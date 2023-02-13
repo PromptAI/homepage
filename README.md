@@ -74,7 +74,6 @@ PromptDialog 是为快速对话设计和部署而构建的无代码开发环境�
 
 1. 已安装最近版本的Docker
 2. 足够的硬盘空间 (建议20GB以上，目前所需Docker镜像约为11GB)
-3. Internet （如果不支持，可在有网络的机器导出Docker Image）
 
 #### 脚本
 
