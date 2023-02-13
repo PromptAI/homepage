@@ -36,9 +36,7 @@ PromptDialog 是为快速对话设计和部署而构建的无代码开发环境�
 
 [天气查询助手](/examples/weather/weather.md) 查询城市天气
 
-<h2 name="quick-start" align="center">示例</h2>
-
-### 视频
+### 视频示例
 <table border="0">
 <tr>
  <td width="33%">
