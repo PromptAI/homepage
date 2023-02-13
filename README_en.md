@@ -4,8 +4,6 @@
 
 PromptDialog is a no-code development environment built for fast dialogue design and deployment.  It is based on <a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a>, but does not require specific knowledge of RASA to design and deploy chatbots. PromptDialog uses natural language to design natural language dialogues.  It minimizes annotation and coding efforts,  aiming for a chatbot release in a few minutes.  PromptDialog facilitates fast debugging, allowing your team to quickly identify errors and improve your design.  The source code of developed chatbots can be downloaded for local/cloud deployment and further customization. 
 
-<br/>
-
 <h2 name="highlights" align="center">HIGHLIGHTS</h2>
 
 <center>
