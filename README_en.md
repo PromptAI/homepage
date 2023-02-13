@@ -1,12 +1,12 @@
 [中文](README.md) | [English](README_en.md)
 
-<h2 align="center">PromptDialog： No-code User Interface for Dialogue Design and Conversational AI  </h2>
+<h2 align="center">PromptDialog： A No-code Development Environment for Dialogues and Conversational AI  </h2>
 
-PromptDialog is a no-code user interface built for fast dialogue design and deployment.  It is based on <a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a>, but does not require specific knowledge of RASA to design and deploy chatbots. PromptDialog uses natural language to design natural language dialogues.  It minimizes annotation and coding efforts,  aiming for a chatbot release in a few minutes.  PromptDialog facilitates fast debugging, allowing your team to quickly identify errors and improve your design.  The source code of developed chatbots can be downloaded for local/cloud deployment and further customization. 
+PromptDialog is a no-code development environment built for fast dialogue design and deployment.  It is based on <a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a>, but does not require specific knowledge of RASA to design and deploy chatbots. PromptDialog uses natural language to design natural language dialogues.  It minimizes annotation and coding efforts,  aiming for a chatbot release in a few minutes.  PromptDialog facilitates fast debugging, allowing your team to quickly identify errors and improve your design.  The source code of developed chatbots can be downloaded for local/cloud deployment and further customization. 
 
 <br/>
 
-<h2 name="highlights" align="center">Highlights</h2>
+<h2 name="HIGHLIGHTS" align="center">Highlights</h2>
 
 <center>
 <table>
@@ -17,40 +17,26 @@ PromptDialog is a no-code user interface built for fast dialogue design and depl
     <th><h3>Fast debugging of dialogue flows</h3></th>
   </tr>
     <tr>
-    <td width="25%">You can design a dialogue system directly without knowing programming.  It provides automatically generated <strong><a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a></strong> codes for further learning and customization.</td>
-    <td width="25%">Entities, intents, slots (variables) and dialog flows are fully displayed in the same integrated development environment (IDE). Different dialogue modules can be combined at will and released with one click.  It is the first of its kind system that embeded software development process in dialogue system design/debugging.</td>
-    <td width="25%">Provide various predefined entities and intents to facilitate rapid development. You are welcome to provide shared modules.</td>
-    <td width="25%">Each dialogue flow can be trained separately or jointly to facilitate testing and rapid debugging.</td>
+    <td width="25%">You can design a dialogue system directly without knowing programming.  Our no-code dialogue editor allows you to implement complex information collection and/or business logics using fine-grained conditions and input validation. It provides automatically generated <strong><a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a></strong> codes for learning and customization.</td>
+    <td width="25%">Entities, intents, slots (variables) and dialog flows are fully displayed in the same integrated development environment (IDE). Different dialogue modules can be combined at will and released with one click.  It provides Web/Mobile modes for publishing. Just copy a few lines of code to have the conversation capability in your applications. </td>
+    <td width="25%">Provide various predefined entities and intents to facilitate rapid development. </td>
+    <td width="25%">It is the first of its kind system that embeded software development process in dialogue system design/debugging.  Each dialogue flow can be trained separately or jointly to facilitate testing and rapid debugging.</td>
   </tr>
 
 </table>
 </center>
 
 <br/>
-<h2 name="features" align="center">Features</h2>
-<table>
 
-<tr>
-    <td width="33%"><h4>Visual Dialogue Editor</h4></td>
-    <td width="67%"> Create a dialogue flow using an intuitive natural language interface. Add intent and entity examples, and create rich responses using buttons, images, and merry-go-rounds.  Deploy dialog bots in one click after the design is done. </td>
-</tr>
-<tr>
-    <td width="33%"><h4>Complex Business Flows</h4></td>
-    <td width="67%"> Our no-code flow editor allows you to implement complex information collection and/or business logics using fine-grained conditions and input validation.</td>
-<tr>
-    <td width="33%"><h4>Customization</h4></td>
-    <td width="67%">Train and debug models easily.</br>We provide different debugging schemes to meet different business needs.</td>
-</tr>
-<tr>
-    <td width="33%"><h4>Non-Intrusive Deployment</h4></td>
-    <td width="67%">It provides Web/Mobile modes for publishing and automatically generates RASA code after publishing. Just copy a few lines of code to have the conversation capability in your applications.
-</tr>
-</table>
-<br/>
+### Use Cases
 
-<h2 name="quick-start" align="center">Examples</h2>
+[Manual Q/A](/examples/car/car_en.md) FAQs in driving
 
-### Video
+[Order Bot](/examples/fruits/fruits.md) collect fruits order information
+
+[Weather Bot](/examples/weather/weather.md) query city weather
+
+### Demo Video
 <table border="0">
 <tr>
  <td width="33%">
@@ -68,13 +54,7 @@ PromptDialog is a no-code user interface built for fast dialogue design and depl
 </tr>
 </table>
 
-### Cases
 
-[Car](/examples/car/car_en.md) FAQs in driving
-
-[Fruits](/examples/fruits/fruits.md) collect fruits order information
-
-[Weather](/examples/weather/weather.md) query city weather
 
 <h2 name="quick-start" align="center">Quick Start</h2>
 
@@ -96,7 +76,6 @@ If you need to deploy the service to your own private server or local, you can r
 
 1. The latest version of Docker is installed
 2. Enough hard disk space (more than 20GB is recommended, and the current Docker image required is about 11GB)
-3. Internet (if not supported, you can export Docker Image on a machine with a network)
 
 #### Script
 
