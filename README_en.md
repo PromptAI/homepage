@@ -26,8 +26,6 @@ PromptDialog is a no-code development environment built for fast dialogue design
 </table>
 </center>
 
-<br/>
-
 ### Use Cases
 
 [Manual Q/A](/examples/car/car_en.md) FAQs in driving
