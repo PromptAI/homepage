@@ -162,6 +162,6 @@ Official Website：
 Email: info@promptai.cn
 
 <br/>
-<h2 align="center">Licence</h2>
+<h2 align="center">License</h2>
 
 Free use
