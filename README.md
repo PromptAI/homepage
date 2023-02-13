@@ -1,4 +1,4 @@
-[中文](README.md) | [English](README_en.md)
+<!--[中文](README.md) | [English](README_en.md) -->
 
 <h2 align="center">PromptDialog： 基于脑图的对话机器人开发环境</h2>
 
