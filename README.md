@@ -2,7 +2,7 @@
 
 <h2 align="center">PromptDialog： 基于脑图的对话机器人开发环境</h2>
 
-PromptDialog 是为快速对话设计和部署而构建的无代码开发环境。它基于RASA，但又不需要特定的RASA 知识来设计和部署聊天机器人。 PromptDialog 使用自然语言来设计自然语言对话。它最大限度地减少了标注和编码工作，旨在几分钟内发布企业聊天机器人。 PromptDialog 有助于快速调试，使您的团队能够快速识别对话错误并改进您的设计。您也可免费下载生成的RASA源码文件， 私有部署。
+PromptDialog 是为快速对话设计和部署而构建的无代码开发环境。它基于RASA，但又不需要特定的RASA 知识来设计和部署聊天机器人。 PromptDialog 使用自然语言来设计自然语言对话。它最大限度地减少了标注和编码工作，旨在几分钟内发布企业聊天机器人。 PromptDialog能使您的设计团队快速识别对话错误并改进您的设计。您也可免费下载生成的RASA源码文件， 私有部署。
 
 <br/>
 <h2 name="Highlights" align="center">Highlights</h2>
