@@ -54,12 +54,12 @@ PromptDialog is a no-code development environment built for fast dialogue design
 
 <h2 name="quick-start" align="center">Quick Start</h2>
 
-Cloud version PromptAI is accessible[https://app.promptai.cn](https://app.promptai.cn?lang=en-US) You can experience it after registering your account.
+Cloud version PromptAI is accessible[https://app.promptai.cn](https://app.promptai.cn) You can experience it after registering your account.
 
 
 <h2 name="documentation" align="center">Documents</h2>
 
-Get PromptAI Document [Document](https://doc.promptai.cn/docs/en) from [https://doc.promptai.cn](https://doc.promptai.cn/docs/en). 
+Get PromptAI Document [Document](https://doc.promptai.cn/) from [https://doc.promptai.cn](https://doc.promptai.cn). 
 
 <h2 name="development" align="center">Local installation</h2>
 
@@ -132,7 +132,7 @@ The user can start the experience by displaying the account and password after i
 <h2 align="center">Contact</h2>
 
 Official Website：
-[www.promptai.cn](https://www.promptai.cn/en)
+[www.promptai.cn](https://www.promptai.cn/)
 
 Email: info@promptai.cn
 
