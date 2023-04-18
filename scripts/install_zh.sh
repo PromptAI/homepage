@@ -10,7 +10,11 @@ docker pull $ai
 docker rm -f zbot
 
 # 3、prepare dirs
-basedir=/usr/local/zbot/
+if [[ $(uname) == "Darwin" ]]; then
+  basedir=$HOME/zbot
+else
+  basedir=/usr/local/zbot
+fi
 
 mkdir -p $basedir/.promptai/
 mkdir -p $basedir/logs
