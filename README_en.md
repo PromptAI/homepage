@@ -56,12 +56,12 @@ Weather Bot query city weather
 
 <h2 name="quick-start" align="center">Quick Start</h2>
 
-Cloud version PromptAI is accessible[https://app.promptai.cn](https://app.promptai.cn) You can experience it after registering your account.
+Cloud version PromptAI is accessible[https://app.promptai.us](https://app.promptai.us) You can experience it after registering your account.
 
 
 <h2 name="documentation" align="center">Documents</h2>
 
-Get PromptAI Document [Document](https://doc.promptai.cn/) from [https://doc.promptai.cn](https://doc.promptai.cn). 
+Get PromptAI Document [Document](https://doc.promptai.us/) from [https://doc.promptai.us](https://doc.promptai.us). 
 
 <h2 name="development" align="center">Local installation</h2>
 
@@ -203,9 +203,9 @@ The user can start the experience by displaying the account and password after i
 <h2 align="center">Contact</h2>
 
 Official Website：
-[www.promptai.cn](https://www.promptai.cn/)
+[www.promptai.us](https://www.promptai.us/)
 
-Email: info@promptai.cn
+Email: info@promptai.us
 
 <br/>
 <h2 align="center">License</h2>
