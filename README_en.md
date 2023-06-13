@@ -18,7 +18,7 @@ PromptDialog is a no-code development environment built for fast dialogue design
     <td width="25%">You can design a dialogue system directly without knowing programming.  Our no-code dialogue editor allows you to implement complex information collection and/or business logics using fine-grained conditions and input validation. It provides automatically generated <strong><a href="https://github.com/rasaHQ/rasa" target="_blank">RASA</a></strong> codes for learning and customization.</td>
     <td width="25%">Entities, intents, slots (variables) and dialog flows are fully displayed in the same integrated development environment (IDE). Different dialogue modules can be combined at will and released with one click.  It provides Web/Mobile modes for publishing. Just copy a few lines of code to have the conversation capability in your applications. </td>
     <td width="25%">Provide various predefined entities and intents to facilitate rapid development. </td>
-    <td width="25%">It is the first of its kind system that embeded software development process in dialogue system design/debugging.  Each dialogue flow can be trained separately or jointly to facilitate testing and rapid debugging.</td>
+    <td width="25%">It is the first of its kind system that embedded software development process in dialogue system design/debugging.  Each dialogue flow can be trained separately or jointly to facilitate testing and rapid debugging.</td>
   </tr>
 
 </table>
