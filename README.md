@@ -89,6 +89,10 @@ PromptDialog 是为快速对话设计和部署而构建的无代码开发环境�
 
 set -e
 
+basedir=$HOME/zbot
+zbot=registry.cn-hangzhou.aliyuncs.com/promptai/zbot-aio:release
+ai=registry.cn-hangzhou.aliyuncs.com/promptai/zbotai:release
+
 # Check the operating system
 OS=$(uname -s)
 if [ "$OS" == "Linux" ]; then
@@ -99,17 +103,22 @@ if [ "$OS" == "Linux" ]; then
     fi
 
     # Linux-specific code here
-    basedir=/usr/local/zbot
     if ! command -v nvidia-smi &> /dev/null; then
-            echo "Nvidia GPU not found."
-            has_nvidia_gpu=false
+        echo "Nvidia GPU not found."
+        has_nvidia_gpu=false
+    else
+        echo "Nvidia GPU found."
+        has_nvidia_gpu=true
+        if ! command -v nvidia-container-cli --load-kmods info &>/dev/null; then
+            echo -e "\033[33mNVIDIA Container Runtime needs to be installed to enable the GPU\033[0m"
+            echo -e "\033[33mInstall NVIDIA Container Runtime: https://developer.nvidia.com/blog/gpu-containers-runtime/\033[0m"
+            has_nvidia_container_cli=false
         else
-            echo "Nvidia GPU found."
-            has_nvidia_gpu=true
+            has_nvidia_container_cli=true
+        fi
     fi
 elif [ "$OS" == "Darwin" ]; then
     # Mac-specific code here
-    basedir=$HOME/zbot
     has_nvidia_gpu=false
 else
     echo "Unsupported operating system: $OS"
@@ -141,14 +150,11 @@ if ! docker info > /dev/null 2>&1; then
 fi
 
 # Check if the user wants to use GPU
-if $has_nvidia_gpu; then
+if $has_nvidia_gpu && $has_nvidia_container_cli; then
   read -p "Do you want to use GPU (y/n)? " USE_GPU
 else
   USE_GPU="no"
 fi
-
-zbot=registry.cn-hangzhou.aliyuncs.com/promptai/zbot-aio:latest
-ai=registry.cn-hangzhou.aliyuncs.com/promptai/zbotai:release
 
 # 1、pull docker image
 docker pull $zbot
