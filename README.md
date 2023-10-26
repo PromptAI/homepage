@@ -68,12 +68,19 @@ PromptDialog 是为快速对话设计和部署而构建的无代码开发环境�
 ### 安装
 如果你需要将服务部署到自己的私有服务器或者本地，可以参考如下教程。
 
-
-
 #### 准备
 
 1. 已安装最近版本的Docker
 2. 足够的硬盘空间 (建议20GB以上，目前所需Docker镜像约为11GB)
+
+#### 一键安装
+
+
+```text
+curl -o install_zh.sh 'https://cdn.githubraw.com/PromptAI/homepage/main/scripts/install_zh.sh' && chmod +x install_zh.sh && ./install_zh.sh
+```
+
+如采用此命令安装，无需查看后续安装教程。
 
 #### 脚本
 

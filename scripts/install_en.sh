@@ -2,6 +2,7 @@
 
 set -e
 
+HOSTNAME=$(hostname)
 basedir=$HOME/zbot
 zbot=promptai/zbot-aio:latest
 ai=promptai/zbotai:release
@@ -92,10 +93,10 @@ hostport=9000
 if [ "$USE_GPU" == "y" ]; then
     echo "Run GPU version"
     # Add GPU-specific code here
-    docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e ai.base.dir=$basedir/.promptai/ -p $hostport:80 --gpus all $zbot
+    docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e ai.base.dir=$basedir/.promptai/ -p $hostport:80 --gpus all $zbot
 else
     echo "Run CPU version"
-    docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
+    docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
 fi
 
 echo "All steps finished, wait container up..."

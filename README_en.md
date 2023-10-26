@@ -75,6 +75,14 @@ If you need to deploy the service to your own private server or local, you can r
 1. The latest version of Docker is installed
 2. Enough hard disk space (more than 20GB is recommended, and the current Docker image required is about 11GB)
 
+
+#### Install via one CMD
+
+Run on your machine
+```text
+curl -o install_en.sh 'https://cdn.githubraw.com/PromptAI/homepage/main/scripts/install_en.sh' && chmod +x install_en.sh && ./install_en.sh
+```
+
 #### Script
 
 The installation process can be unattended. The pull image time here is related to the network. You can have a cup of tea and come back.
