@@ -7,6 +7,44 @@ basedir=$HOME/zbot
 zbot=promptai/zbot-aio:latest
 ai=promptai/zbotai:release
 
+# default port can update by -p
+hostport=9000
+
+# min & max port
+min_port=1024
+max_port=65535
+
+while getopts "p:" opt; do
+  case $opt in
+    p)
+      if [[ $OPTARG =~ ^[0-9]+$ ]]; then
+        if ((OPTARG >= min_port && OPTARG <= max_port)); then
+          hostport="$OPTARG"
+        else
+          echo "The port number must be between $min_port and $max_port" >&2
+          exit 1
+        fi
+      else
+        echo "Invalid port number: $OPTARG" >&2
+        exit 1
+      fi
+      ;;
+    \?)
+      echo "Invalid option:  -$OPTARG" >&2
+      exit 1
+      ;;
+    :)
+      echo " - $OPTARG need to be set" >&2
+      exit 1
+      ;;
+  esac
+done
+
+# handle invalid param
+shift $((OPTIND-1))
+
+echo "Use Port: $hostport"
+
 # Check the operating system
 OS=$(uname -s)
 if [ "$OS" == "Linux" ]; then
@@ -88,10 +126,8 @@ mkdir -p $basedir/mongo
 mkdir -p $basedir/p8s
 mkdir -p $basedir/mount
 
-# 4、bind port
-hostport=9000
 
-# 5、run container
+# 4、run container
 if [ "$USE_GPU" == "y" ]; then
     echo "Run GPU version"
     # Add GPU-specific code here
