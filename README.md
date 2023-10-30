@@ -96,9 +96,48 @@ curl -o install_zh.sh 'https://cdn.githubraw.com/PromptAI/homepage/main/scripts/
 
 set -e
 
+HOSTNAME=$(hostname)
 basedir=$HOME/zbot
 zbot=registry.cn-hangzhou.aliyuncs.com/promptai/zbot-aio:release
 ai=registry.cn-hangzhou.aliyuncs.com/promptai/zbotai:release
+
+# default port can update by -p
+hostport=9000
+
+# min & max port
+min_port=1024
+max_port=65535
+
+while getopts "p:" opt; do
+  case $opt in
+    p)
+      if [[ $OPTARG =~ ^[0-9]+$ ]]; then
+        if ((OPTARG >= min_port && OPTARG <= max_port)); then
+          hostport="$OPTARG"
+        else
+          echo "The port number must be between $min_port and $max_port" >&2
+          exit 1
+        fi
+      else
+        echo "Invalid port number: $OPTARG" >&2
+        exit 1
+      fi
+      ;;
+    \?)
+      echo "Invalid option:  -$OPTARG" >&2
+      exit 1
+      ;;
+    :)
+      echo " - $OPTARG need to be set" >&2
+      exit 1
+      ;;
+  esac
+done
+
+# handle invalid param
+shift $((OPTIND-1))
+
+echo "Use Port: $hostport"
 
 # Check the operating system
 OS=$(uname -s)
@@ -164,8 +203,10 @@ else
 fi
 
 # 1、pull docker image
+echo "Try to pull the latest docker image."
 docker pull $zbot
 docker pull $ai
+echo "Done"
 
 # 2、remove exist container
 docker rm -f zbot
@@ -176,18 +217,16 @@ mkdir -p $basedir/logs
 mkdir -p $basedir/mysql
 mkdir -p $basedir/mongo
 mkdir -p $basedir/p8s
+mkdir -p $basedir/mount
 
-# 4、bind port
-hostport=9000
-
-# 5、run container
+# 4、run container
 if [ "$USE_GPU" == "y" ]; then
     echo "Run GPU version"
     # Add GPU-specific code here
-    docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -e ai.base.dir=$basedir/.promptai/ -p $hostport:80 --gpus all $zbot
+    docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e ai.base.dir=$basedir/.promptai/ -p $hostport:80 --gpus all $zbot
 else
     echo "Run CPU version"
-    docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
+    docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
 fi
 
 echo "All steps finished, wait container up..."
