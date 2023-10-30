@@ -71,10 +71,10 @@ else
 fi
 
 # 1、pull docker image
-ehco "Try to pull the latest docker image."
+echo "Try to pull the latest docker image."
 docker pull $zbot
 docker pull $ai
-ehco "Done"
+echo "Done"
 
 # 2、remove exist container
 docker rm -f zbot
