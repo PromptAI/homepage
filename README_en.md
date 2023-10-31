@@ -82,6 +82,7 @@ Run on your machine
 ```text
 curl -o install_en.sh 'https://cdn.githubraw.com/PromptAI/homepage/main/scripts/install_en.sh' && chmod +x install_en.sh && ./install_en.sh
 ```
+- Custom port end with：` -p <your port>`
 
 #### Script
 

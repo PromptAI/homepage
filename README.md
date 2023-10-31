@@ -81,6 +81,7 @@ curl -o install_zh.sh 'https://cdn.githubraw.com/PromptAI/homepage/main/scripts/
 ```
 
 如采用此命令安装，无需查看后续安装教程。
+- 支持自定义端口，在末尾加上：` -p <your port>`
 
 #### 脚本
 
