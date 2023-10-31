@@ -80,7 +80,7 @@ If you need to deploy the service to your own private server or local, you can r
 
 Run on your machine
 ```text
-curl -o install_en.sh 'https://cdn.githubraw.com/PromptAI/homepage/main/scripts/install_en.sh' && chmod +x install_en.sh && ./install_en.sh
+curl -o install.sh 'https://cdn.githubraw.com/PromptAI/homepage/main/scripts/install_en.sh' && chmod +x install.sh && ./install.sh
 ```
 - Custom port end with：` -p <your port>`
 

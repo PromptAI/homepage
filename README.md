@@ -77,7 +77,7 @@ PromptDialog 是为快速对话设计和部署而构建的无代码开发环境�
 
 
 ```text
-curl -o install_zh.sh 'https://cdn.githubraw.com/PromptAI/homepage/main/scripts/install_zh.sh' && chmod +x install_zh.sh && ./install_zh.sh
+curl -o install.sh 'https://cdn.githubraw.com/PromptAI/homepage/main/scripts/install_zh.sh' && chmod +x install.sh && ./install.sh
 ```
 
 如采用此命令安装，无需查看后续安装教程。
