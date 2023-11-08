@@ -43,7 +43,7 @@ done
 # handle invalid param
 shift $((OPTIND-1))
 
-echo "Use Port: $hostport"
+echo "Http Port: $hostport"
 
 # Check the operating system
 OS=$(uname -s)
