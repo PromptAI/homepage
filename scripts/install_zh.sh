@@ -4,7 +4,7 @@ set -e
 
 HOSTNAME=$(hostname)
 basedir=$HOME/zbot
-zbot=registry.cn-hangzhou.aliyuncs.com/promptai/zbot-aio:release
+zbot=registry.cn-hangzhou.aliyuncs.com/promptai/zbot-aio:latest
 ai=registry.cn-hangzhou.aliyuncs.com/promptai/zbotai:release
 
 # default port can update by -p
