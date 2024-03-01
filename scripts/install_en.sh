@@ -5,7 +5,7 @@ set -e
 HOSTNAME=$(hostname)
 basedir=$HOME/zbot
 zbot=promptai/zbot-aio:latest
-ai=promptai/zbotai:release
+ai=promptai/zbotai:release.llm
 
 # default port can update by -p
 hostport=9000
@@ -53,28 +53,6 @@ if [ "$OS" == "Linux" ]; then
         echo "Please run this script as root."
         exit
     fi
-
-    # Linux-specific code here
-    if ! command -v nvidia-smi &> /dev/null; then
-        echo "Nvidia GPU not found."
-        has_nvidia_gpu=false
-    else
-        echo "Nvidia GPU found."
-        has_nvidia_gpu=true
-        if ! command -v nvidia-container-cli --load-kmods info &>/dev/null; then
-            echo -e "\033[33mNVIDIA Container Runtime needs to be installed to enable the GPU\033[0m"
-            echo -e "\033[33mInstall NVIDIA Container Runtime: https://developer.nvidia.com/blog/gpu-containers-runtime/\033[0m"
-            has_nvidia_container_cli=false
-        else
-            has_nvidia_container_cli=true
-        fi
-    fi
-elif [ "$OS" == "Darwin" ]; then
-    # Mac-specific code here
-    has_nvidia_gpu=false
-else
-    echo "Unsupported operating system: $OS"
-    exit 1
 fi
 
 # Check if Docker is installed
@@ -101,14 +79,6 @@ if ! docker info > /dev/null 2>&1; then
     exit 1
 fi
 
-# Check if the user wants to use GPU
-if $has_nvidia_gpu && $has_nvidia_container_cli; then
-  read -p "Do you want to use GPU (y/n)? " USE_GPU
-else
-  USE_GPU="no"
-fi
-
-
 # 1、pull docker image
 echo "Try to pull the latest docker image."
 docker pull $zbot
@@ -126,16 +96,8 @@ mkdir -p $basedir/mongo
 mkdir -p $basedir/p8s
 mkdir -p $basedir/mount
 
-
 # 4、run container
-if [ "$USE_GPU" == "y" ]; then
-    echo "Run GPU version"
-    # Add GPU-specific code here
-    docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e ai.base.dir=$basedir/.promptai/ -p $hostport:80 --gpus all $zbot
-else
-    echo "Run CPU version"
-    docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
-fi
+docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e "EXPOSE_PORT=$hostport" -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
 
 echo "All steps finished, wait container up..."
 docker logs -f zbot
