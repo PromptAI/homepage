@@ -97,7 +97,7 @@ mkdir -p $basedir/p8s
 mkdir -p $basedir/mount
 
 # 4、run container
-docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e "EXPOSE_PORT=$hostport" -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
+docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e "EXPOSE_PORT=$hostport" -e "AI_DOCKER_IMAGE=promptai/zbotai:release" -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
 
 echo "All steps finished, wait container up..."
 docker logs -f zbot
