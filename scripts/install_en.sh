@@ -86,7 +86,7 @@ docker pull $ai
 echo "Done"
 
 # 2、remove exist container
-docker rm -f zbot
+docker rm -f zbot 2> /dev/null
 
 # 3、prepare dirs
 mkdir -p $basedir/.promptai/
@@ -95,9 +95,10 @@ mkdir -p $basedir/mysql
 mkdir -p $basedir/mongo
 mkdir -p $basedir/p8s
 mkdir -p $basedir/mount
+mkdir -p $basedir/vector
 
 # 4、run container
-docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e "EXPOSE_PORT=$hostport" -e "AI_DOCKER_IMAGE=promptai/zbotai:release" -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
+docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw  -v $basedir/vector:/qdrant/storage:z -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e "EXPOSE_PORT=$hostport"  -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
 
 echo "All steps finished, wait container up..."
 docker logs -f zbot
