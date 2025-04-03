@@ -1,11 +1,12 @@
 #!/bin/bash
 
+# install PromptAI to Local
 set -e
 
 HOSTNAME=$(hostname)
-basedir=$HOME/zbot
-zbot=promptai/zbot-aio:latest
-ai=promptai/zbotai:release.llm
+BASE_DIR=$HOME/promptai
+IMAGE=promptai/promptai:test
+CONTAINER_NAME=promptai
 
 # default port can update by -p
 hostport=9000
@@ -43,7 +44,7 @@ done
 # handle invalid param
 shift $((OPTIND-1))
 
-echo "Http Port: $hostport"
+echo "Use Http Port: $hostport"
 
 # Check the operating system
 OS=$(uname -s)
@@ -80,25 +81,29 @@ if ! docker info > /dev/null 2>&1; then
 fi
 
 # 1、pull docker image
-echo "Try to pull the latest docker image."
-docker pull $zbot
-docker pull $ai
+echo "Try to pull the latest promptai docker image."
+docker pull $IMAGE
+
 echo "Done"
 
 # 2、remove exist container
-docker rm -f zbot 2> /dev/null
+docker rm -f $CONTAINER_NAME 2> /dev/null
 
 # 3、prepare dirs
-mkdir -p $basedir/.promptai/
-mkdir -p $basedir/logs
-mkdir -p $basedir/mysql
-mkdir -p $basedir/mongo
-mkdir -p $basedir/p8s
-mkdir -p $basedir/mount
-mkdir -p $basedir/vector
+mkdir -p $BASE_DIR/logs
+mkdir -p $BASE_DIR/mysql
+mkdir -p $BASE_DIR/mongo
 
 # 4、run container
-docker run --restart always --name zbot -d --add-host=host.docker.internal:host-gateway -v $basedir/.promptai/:$basedir/.promptai/:rw  -v $basedir/vector:/qdrant/storage:z -v /var/run/docker.sock:/var/run/docker.sock  -v $basedir/logs:/data/logs -v $basedir/mysql:/data/mysql -v $basedir/mongo:/data/mongo -v $basedir/p8s:/data/minimalzp/p8s -v $basedir/mount:/data/mount -e "HOSTNAME=$HOSTNAME" -e "EXPOSE_PORT=$hostport"  -e ai.base.dir=$basedir/.promptai/ -p $hostport:80  $zbot
+docker run --restart always \
+ --name $CONTAINER_NAME -d \
+ -v $BASE_DIR/logs:/data/logs \
+ -v $BASE_DIR/mysql:/data/mysql \
+ -v $BASE_DIR/mongo:/data/mongo \
+ -v $BASE_DIR/mount:/data/mount \
+ -e "HOSTNAME=$HOSTNAME" \
+ -e "EXPOSE_PORT=$hostport" \
+ -p $hostport:80  $IMAGE
 
 echo "All steps finished, wait container up..."
-docker logs -f zbot
+docker logs -f $CONTAINER_NAME
